@@ -1,0 +1,33 @@
+#!/bin/bash
+# This script runs mpi-sort for 1 or 16 nodes. All data files (splited) must be in input folder.
+# Usage: ./mpirun <n_of_nodes> <output_file>
+# For a different number of nodes use command "mpirun -np <n_of_nodes> -hostfile hostfile mysort data <outputfile>"
+#
+
+np=$1
+outfile=$2
+
+if [ "$np" -eq 1 ]
+then
+	cp input/data00 data
+	mpirun -np 1 -hostfile hostfile mysort data $outfile
+elif [ "$np" -eq 16 ]
+then
+	let i=0
+	for node in $(cat hostfile)
+	do
+	   if [ "$i" -lt 1 ]
+	   then 
+	      scp "input/data00" $node:"data"
+	   elif [ "$i" -lt 10 ] 
+	   then
+	      scp "input/data0"${node:5:1} $node:"data"
+	   else
+	      scp "input/data"${node:5:2} $node:"data"
+	   fi
+	   let ++i
+	done
+	mpirun -np 16 -hostfile hostfile mysort data $outfile
+else
+	echo "Number of nodes must be 1 or 16. For a different number of nodes use ./pushoutdata data to send the files to the nodes and then the command : mpirun -np <n_of_nodes> -hostfile hostfile mysort data <outputfile>"
+fi

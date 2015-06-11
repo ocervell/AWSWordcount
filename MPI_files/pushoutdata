@@ -1,0 +1,17 @@
+#!/bin/bash
+# Sends all the data files contained in folder input to all the nodes.
+
+let i=0
+for node in $(cat hostfile)
+do
+   if [ "$i" -lt 1 ]
+   then 
+      scp "input/data00" $node:"data"
+   elif [ "$i" -lt 10 ] 
+   then
+      scp "input/data0"${node:5:1} $node:"data"
+   else
+      scp "input/data"${node:5:2} $node:"data"
+   fi
+   let ++i
+done

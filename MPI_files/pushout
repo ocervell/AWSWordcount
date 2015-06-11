@@ -1,0 +1,4 @@
+for node in $(cat hostfile)
+do
+  scp $1 $node:$1
+done

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+
+     <property>
+          <name>mapred.job.tracker</name>
+          <value>172.30.0.199:50049</value>
+     </property>
+     <property>
+          <name>mapred.job.tracker.info.port</name>
+          <value>50050</value>
+     </property>
+     <property>
+          <name>mapred.task.tracker.output.port</name>
+          <value>50051</value>
+     </property>
+     <property>
+          <name>mapred.task.tracker.report.port</name>
+          <value>50052</value>
+     </property>
+
+
+     <property>
+          <name>mapred.local.dir</name>
+          <value>/home/ubuntu/hadoop/tmp/mapred_loc</value>
+    </property>
+
+    <property>
+          <name>mapred.system.dir</name>
+          <value>/home/ubuntu/hadoop/tmp/mapred</value>
+    </property>
+
+
+
+</configuration>

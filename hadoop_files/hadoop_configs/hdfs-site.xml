@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+      <property>
+          <name>dfs.replication</name>
+          <value>16</value>
+      </property>
+      <property>
+          <name>dfs.name.dir</name>
+          <value>/home/ubuntu/hadoop/tmp/nn</value>
+      </property>
+      <property>
+          <name>dfs.data.dir</name>
+          <value>/home/ubuntu/hadoop/tmp/dn</value>
+      </property>
+      <property>
+          <name>dfs.datanode.address</name>
+          <value>localhost:50010</value>
+      </property>      
+      <property>
+          <name>dfs.datanode.http.address</name>
+          <value>localhost:50075</value>
+      </property>
+      <property>
+          <name>dfs.datanode.ipc.address</name>
+          <value>localhost:50020</value>
+      </property>
+      <property>
+          <name>dfs.namenode.http-address</name>
+          <value>localhost:50070</value>
+      </property>      
+      <property>
+          <name>dfs.permissions</name>
+          <value>false</value>
+      </property>
+
+
+</configuration>

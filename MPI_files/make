@@ -1,0 +1,2 @@
+mpicc mysort.c -o mysort;
+./pushout mysort;

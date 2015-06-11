@@ -1,0 +1,84 @@
+Host Master
+        User ubuntu
+        Hostname Master
+        IdentityFile ~/Keys/mkmad.pem
+        
+Host Slave1
+        User ubuntu
+        Hostname Slave1
+        IdentityFile ~/Keys/mkmad.pem
+
+Host Slave2
+        User ubuntu
+        Hostname Slave2
+        IdentityFile ~/Keys/mkmad.pem        
+
+Host Slave3
+        User ubuntu
+        Hostname Slave3
+        IdentityFile ~/Keys/mkmad.pem        
+
+Host Slave4
+        User ubuntu
+        Hostname Slave4
+        IdentityFile ~/Keys/mkmad.pem        
+
+Host Slave5
+        User ubuntu
+        Hostname Slave5
+        IdentityFile ~/Keys/mkmad.pem        
+
+Host Slave6
+        User ubuntu
+        Hostname Slave6
+        IdentityFile ~/Keys/mkmad.pem        
+
+Host Slave7
+        User ubuntu
+        Hostname Slave7
+        IdentityFile ~/Keys/mkmad.pem        
+
+Host Slave8
+        User ubuntu
+        Hostname Slave8
+        IdentityFile ~/Keys/mkmad.pem        
+
+Host Slave9
+        User ubuntu
+        Hostname Slave9
+        IdentityFile ~/Keys/mkmad.pem        
+
+Host Slave10
+        User ubuntu
+        Hostname Slave10
+        IdentityFile ~/Keys/mkmad.pem        
+
+Host Slave11
+        User ubuntu
+        Hostname Slave11
+        IdentityFile ~/Keys/mkmad.pem        
+
+Host Slave12
+        User ubuntu
+        Hostname Slave12
+        IdentityFile ~/Keys/mkmad.pem        
+
+Host Slave13
+        User ubuntu
+        Hostname Slave13
+        IdentityFile ~/Keys/mkmad.pem        
+
+Host Slave14
+        User ubuntu
+        Hostname Slave14
+        IdentityFile ~/Keys/mkmad.pem        
+
+Host Slave15
+        User ubuntu
+        Hostname Slave15
+        IdentityFile ~/Keys/mkmad.pem        
+
+Host Slave16
+        User ubuntu
+        Hostname Slave16
+        IdentityFile ~/Keys/mkmad.pem        
